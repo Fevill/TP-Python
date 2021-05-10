@@ -1,0 +1,19 @@
+{
+    "machines": [
+    {
+        "hostname": null,
+        "ip": null,
+        "nbCPU": null,
+        "nbHDD": null,
+        "hddSize": null,
+        "os": null
+    },
+    {
+        "hostname": null,
+        "ip": null,
+        "nbCPU": null,
+        "nbHDD": null,
+        "hddSize": null,
+        "os": null
+    }]
+}
