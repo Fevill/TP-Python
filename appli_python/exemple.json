@@ -4,6 +4,7 @@
         "hostname": "SRVINFRA12",
         "ip": "192.168.0.19",
         "nbCPU": "4",
+		"tailleRAM": "4096",
         "nbHDD": "2",
         "allHDD": [
 			{"numHDD": "1", "espHDD": "60"},
@@ -12,11 +13,15 @@
         "os": "Windows Server 2019"
     },
     {
-        "hostname": null,
-        "ip": null,
-        "nbCPU": null,
-        "nbHDD": null,
-        "hddSize": null,
-        "os": null
+        "hostname": "SRVINFRA15",
+        "ip": "192.168.0.24",
+        "nbCPU": "8",
+		"tailleRAM": "8192",
+        "nbHDD": "2",
+        "allHDD": [
+			{"numHDD": "1", "espHDD": "80"},
+			{"numHDD": "2", "espHDD": "1500"}
+		],
+        "os": "Windows Server 2019"
     }]
 }
