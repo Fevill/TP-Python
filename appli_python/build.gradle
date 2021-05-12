@@ -1,0 +1,7 @@
+task pylint(type:Exec) {
+  //println 'Setting up dependencies'
+  executable 'sh'
+  args '-c', 'pylint src/app/main.py'
+  standardOutput = new ByteArrayOutputStream()
+  ext.output = { return standardOutput.toString() }
+}

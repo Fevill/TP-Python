@@ -16,3 +16,5 @@ l'adresse IP : 192.168.0.12
 8. les identifiants :
     - user : admin
     - password: le mot de passe se trouve dans le fichier /opt/nexus/sonatype-work/nexus3/admin.password sur le serveur nexus 
+
+

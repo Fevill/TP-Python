@@ -5,7 +5,7 @@ import os
 
 machines =[];
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-FILE_PATH = os.path.join(THIS_FOLDER, 'exemple.json')
+FILE_PATH = os.path.join(THIS_FOLDER, '../asset/exemple.json')
 
 ## Lister les machines
 def listerMachine():
@@ -117,6 +117,5 @@ class Machine :
 
 #### Main ####
 listerMachine()
-detailMachine()
-ajouterUneMachine()
+
 
