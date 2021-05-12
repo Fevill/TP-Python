@@ -9,7 +9,6 @@ FILE_PATH = os.path.join(THIS_FOLDER, 'exemple.json')
 
 ## Lister les machines
 def listerMachine():
-    
 
     print("")
     print("\tListe de toutes les machines")
@@ -36,14 +35,6 @@ def detailMachine():
             print(m)
             return m
     pass
-
-def encoderMachine(machine):
-        if isinstance(machine,Machine):
-            return{'hostname': machine.hostname,}
-        raise TypeError(f'Object {machine} is not of type Personne.')
-
-def toJSON(self):
-    return json.dumps(self, default=encoderMachine)
 
 ## Sauvegarde de données
 def sauvegarderLesDonnees():
@@ -81,7 +72,10 @@ def ajouterUneMachine():
             print("7/7 - Sauvegarde annuler")
             ON=False
 
-
+## Ajouter une application
+def ajouterUneApplication():
+    print("Ajoute une application")
+    pass
 
 #####CLASSE MACHINE#####
 class Machine :
