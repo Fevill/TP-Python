@@ -74,7 +74,7 @@ def ajouterUneMachine():
 
 ## Ajouter une application
 def ajouterUneApplication():
-    print("Ajoute une application")
+    print("Ajoute une application 1")
     pass
 
 #####CLASSE MACHINE#####
