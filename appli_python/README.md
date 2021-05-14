@@ -1,3 +1,5 @@
+# APP Python
+
 Menu()
 afficher le choix entre les différentes fonctionnalités
 L'utilisateur entre un numéro pour sélectionner la fonctionnalité
@@ -43,10 +45,3 @@ listerApplications()
 Fait un appel à l'URL de l'API
 Récupère le résultat dans une variable
 Affiche les propriétés récupérées
-
-ajoutApplication()
-Demande à l'utilisateur le nom
-Demande à l'utilisateur la version
-Demande à l'utilisateur l'auteur
-Demande à l'utilisateur la licence
-Fait appel à l'URL de l'API pour passer l'objet au serveur NExus
