@@ -11,6 +11,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :inline => "sudo rm /etc/localtime && sudo ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime", run: "always"
   # Pour accéder à la VM depuis l'hote
   #config.vm.network :forwarded_port, guest: 8080, host: 8014
+  config.vm.network 'forwarded_port',
+    guest: 8080,
+    host: 40000,
+    host_ip: 'localhost'
 
   config.vm.network "public_network", ip: "192.168.0.11"
 
