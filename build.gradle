@@ -24,7 +24,7 @@ def tarfile = "application-" + version
  
 
 task packageDistribution(type: Zip, dependsOn: dependances) {
-    from ('src') { into '.' }
+    from ('appli_python/src') { into '.' }
     archiveFileName = tarfile + ".zip"
     destinationDirectory = file("build")
 }
