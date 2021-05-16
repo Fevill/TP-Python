@@ -49,3 +49,7 @@ Nexus, doi être capable de récupérer le nouveau code avant de ziper)
 
 https://plugins.jenkins.io/generic-webhook-trigger/
 
+#### Instalation supplementaire pour serveur Jenkins (git/gradle)
+
+executer le script gitgradledeb.sh situe dans le repertoire /home/rsync
+sudo ./gitgradledeb.sh
