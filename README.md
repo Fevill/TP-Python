@@ -1,4 +1,4 @@
-# TP Python $$$$$$$
+# TP Python
 
 ## Serveur Nexus
 
@@ -53,3 +53,4 @@ https://plugins.jenkins.io/generic-webhook-trigger/
 
 executer le script gitgradledeb.sh situe dans le repertoire /home/rsync
 sudo ./gitgradledeb.sh
+
