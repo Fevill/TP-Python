@@ -59,6 +59,8 @@ sudo ./gitgradledeb.sh
 1. Lancer le vagrantFile situé dans /app-application/
 2. Copier coller le dossier /app-application/src
 3. executer le script /app-application/src/app/main.py
+```
+    - python3.8 /app-application/src/app/main.py
 
 
 
