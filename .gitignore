@@ -1,0 +1,10 @@
+.vagrant/
+.vagrant.d/
+vagrant/.catch
+vagrant/.vagrant/
+vagrant/.vagrant.d/
+
+vagrant-rsync/vagrant/*
+vagrant-rsync/.vagrant/*
+**/vagrant-rsync/nexus.tar.gz
+.idea/

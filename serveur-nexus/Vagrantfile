@@ -1,0 +1,47 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby sw=2 st=2 et :
+
+# Nom de la machine
+MACHINE_NAME='nexus'
+
+# L'ip de la machine
+MACHINE_IP='192.168.0.12'
+
+# L'ip de la machine host
+HOST_MACHINE_IP='localhost'
+
+# Mémoire RAM utilisé
+MACHINE_RAM=3000
+
+#Redirection des ports machines
+PORT_NEXUS=8081
+HOST_PORT_NEXUS=5012
+
+# Fichier de synchronisation
+SHARE_FOLDER="/home/rsync"
+HOST_SHARE_FOLDER="vagrant-rsync/"
+
+## Début de la configuration du vagrant file
+Vagrant.configure('2') do |config|
+
+    config.vm.box = 'debian/buster64'
+    
+    # config.vm.box = "puppetlabs/debian-7.8-64-puppet"
+    config.vm.box_check_update = false
+
+    config.vm.network 'forwarded_port',guest: PORT_NEXUS,host: HOST_PORT_NEXUS,host_ip: HOST_MACHINE_IP
+    config.vm.network 'public_network',ip: MACHINE_IP
+
+    # Mettre en place un cache pour APT
+    config.vm.define MACHINE_NAME do |machine|
+
+        machine.vm.hostname = MACHINE_NAME
+
+        # Limiter la RAM de la VM Vanessa David Avril 2021
+        machine.vm.provider 'virtualbox' do |vb|
+            vb.memory = MACHINE_RAM
+            vb.name = MACHINE_NAME
+        end
+    end
+    config.vm.synced_folder HOST_SHARE_FOLDER, SHARE_FOLDER, create: true
+end

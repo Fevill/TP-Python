@@ -1,0 +1,76 @@
+{
+    "machines": [
+        {
+            "hostname": "SRVINFRA01",
+            "ip": "192.168.0.19",
+            "nbCPU": "4",
+            "nbHDD": "2",
+            "allHDD": [
+                {
+                    "numHDD": "1",
+                    "espHDD": "60"
+                },
+                {
+                    "numHDD": "2",
+                    "espHDD": "200"
+                }
+            ],
+            "tailleRAM": "4096",
+            "os": "Windows Server 2019"
+        },
+        {
+            "hostname": "SRVINFRA02",
+            "ip": "192.168.0.24",
+            "nbCPU": "8",
+            "nbHDD": "2",
+            "allHDD": [
+                {
+                    "numHDD": "1",
+                    "espHDD": "80"
+                },
+                {
+                    "numHDD": "2",
+                    "espHDD": "1500"
+                }
+            ],
+            "tailleRAM": "8192",
+            "os": "Windows Server 2019"
+        },
+		{
+            "hostname": "SRVWEB01",
+            "ip": "192.168.0.28",
+            "nbCPU": "4",
+            "nbHDD": "2",
+            "allHDD": [
+                {
+                    "numHDD": "1",
+                    "espHDD": "80"
+                },
+                {
+                    "numHDD": "2",
+                    "espHDD": "1500"
+                }
+            ],
+            "tailleRAM": "8192",
+            "os": "Debian 9"
+        },
+		{
+            "hostname": "SRVBDD01",
+            "ip": "192.168.0.20",
+            "nbCPU": "12",
+            "nbHDD": "2",
+            "allHDD": [
+                {
+                    "numHDD": "1",
+                    "espHDD": "80"
+                },
+                {
+                    "numHDD": "2",
+                    "espHDD": "3000"
+                }
+            ],
+            "tailleRAM": "12228",
+            "os": "CentOS 7"
+        }
+    ]
+}
