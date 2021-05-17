@@ -54,3 +54,12 @@ https://plugins.jenkins.io/generic-webhook-trigger/
 executer le script gitgradledeb.sh situe dans le repertoire /home/rsync
 sudo ./gitgradledeb.sh
 
+## Application Python
+
+1. Lancer le vagrantFile situé dans /app-application/
+2. Copier coller le dossier /app-application/src
+3. executer le script /app-application/src/app/main.py
+
+
+
+
